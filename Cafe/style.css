@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body{
+    background-image: url(img/photo-1501339847302-ac426a4a7cbb.avif);
+    background-color: #121315;
+    background-size: 100% 40vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.contenedor-principal{
+    background-color: #1C1D1F;
+    width: 80%;
+    height: auto;
+    margin: 50px;
+    border-radius: 20px;
+}
+.contenedor-principal h1{
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 50px;
+    color: white;
+}
+.contenedor-principal p{
+    text-align: center;
+    margin: 20px;
+    flex-direction: column;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    color: #908f8f;
+}
+.secciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secciones button{
+    border: none;
+    background-color: #1C1D1F;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+   
+    cursor: pointer;
+}
+.secciones button:hover{
+    background-color: #9f9b9b;
+    border-radius: 20px;
+    height: 5vh;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 30px;
+}
+.grid .items{
+    position: relative;
+    display: inline-block;
+    height: auto;
+    margin: 10px;
+    
+   
+}
+img{
+    display: block;
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+}
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+}
+.precio p:nth-child(1){
+    color: white;
+    font-weight: bold;
+}
+.precio p:nth-child(2){
+    background-color: aquamarine;
+    color: black;
+    border-radius: 10px;
+    width: 20%;
+}
+.items .fuera{
+    text-align: left;
+}
+.items .dentro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #F5C769; /* Fondo semi-transparente para mejor legibilidad */
+    color: white;
+    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+    margin: 5px;
+    border-radius: 10px;
+}
+.fuera .fa-star{
+    color: #F5C769;
+}
